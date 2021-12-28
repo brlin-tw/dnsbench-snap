@@ -18,8 +18,7 @@ Published for <img src="http://anything.codes/slack-emoji-for-techies/emoji/tux.
 
 ### In a Terminal
     # Install the snap #
-    sudo snap install --channel=edge --devmode dnsbench
-    #sudo snap install --channel=beta dnsbench
+    sudo snap install --channel=beta dnsbench
     #sudo snap install dnsbench
     
     # Launch the application #
