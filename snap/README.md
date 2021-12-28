@@ -7,9 +7,7 @@
 
 **This is the unofficial snap for GRC's DNS Benchmark**, *"A unique, comprehensive, accurate & free utility to determine the exact performance of local and remote DNS nameservers"*. It works on Ubuntu, Fedora, Debian, and other major Linux distributions.
 
-<!-- Uncomment and modify this when you are provided a snap status badge
-[![Status Badge of the `dnsbench` Snap](https://snapcraft.io/dnsbench/badge.svg)](https://snapcraft.io/dnsbench)
--->
+[![snap status badge](https://snapcraft.io/dnsbench/badge.svg)](https://snapcraft.io/dnsbench)
 
 ![Screenshot of the Snapped Application](local/screenshots/default-view.png "Screenshot of the Snapped Application")
 
