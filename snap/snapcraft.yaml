@@ -255,7 +255,7 @@ plugs:
     target: $SNAP/wine-runtime
     default-provider: wine-platform-runtime
   # This contains the Wine binaries themselves
-  wine-5-stable:
+  wine-6-stable:
     interface: content
     target: $SNAP/wine-platform
-    default-provider: wine-platform-5-stable
+    default-provider: wine-platform-6-stable
