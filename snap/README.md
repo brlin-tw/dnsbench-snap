@@ -3,7 +3,7 @@
 	Use the Staticaly service for easy access to in-repo pictures:
 	https://www.staticaly.com/
 -->
-![(Placeholder) Icon of GRC's DNS Benchmark](https://cdn.staticaly.com/gh/Lin-Buo-Ren/snapcrafters-template-plus/bea3bc56/snap/gui/dnsbench.png "(Placeholder) Icon of GRC's DNS Benchmark")
+![Icon of GRC's DNS Benchmark](gui/DNSBench.256px.png "Icon of GRC's DNS Benchmark")
 
 **This is the unofficial snap for GRC's DNS Benchmark**, *"A unique, comprehensive, accurate & free utility to determine the exact performance of local and remote DNS nameservers"*. It works on Ubuntu, Fedora, Debian, and other major Linux distributions.
 

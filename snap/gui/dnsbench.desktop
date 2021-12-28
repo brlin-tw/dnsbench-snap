@@ -7,5 +7,5 @@ Type=Application
 Name=GRC's DNS Benchmark
 Comment=A unique, comprehensive, accurate & free utility to determine the exact performance of local and remote DNS nameservers
 Exec=dnsbench
-Icon=${SNAP}/meta/gui/dnsbench.png
+Icon=${SNAP}/meta/gui/DNSBench.256px.png
 Categories=Utility;Network

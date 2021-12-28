@@ -8,6 +8,15 @@ For third-party packaging where the packaging recipe is separated from the packa
 
 NOTE: The Snap Store requires that the snap's representing icon be a image of SVG or PNG with at least 256x256px in size.  If the upstream provided logo is not scalable or large enough a modified copy that satisfies the requirement must be made and placed here.
 
+Extraction and conversion instruction:
+
+```commands
+sudo apt-get install icoutils
+wrestool -x -t 14 DNSBench.exe > DNSBench.ico
+icotool --extract --icon --index=2 --width=32 --height=32 --bit-depth=4 --palette-size=16 DNSBench.ico
+convert DNSBench_2_32x32x4.png -scale 256x256 DNSBench.256px.png
+```
+
 ## Desktop Entries for Applications Provided by the Snap
 If the packaging target is a graphical user interface application but it doesn't implement a freedesktop.org desktop entry, you may implement one here with the `.desktop` filename extension(The filename isn't significant, but it's `Exec` key must be a valid snap launch command(e.g. `_snap_name_._app_name_` or `_snap_name_` when `_snap_name_` is identical to the `_app_name_`) and it's `Icon` key must set to `$SNAP/some/icon/under/the/prime/directory.{png,svg}` in order to make the menu entry's icon work).
 

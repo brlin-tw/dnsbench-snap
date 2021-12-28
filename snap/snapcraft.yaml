@@ -45,7 +45,7 @@ description: |
 
 # The path of icon to represent the snap, relative to the source tree directory
 # Only PNG or SVG image is supported, dimension must be greater than 256x256px
-icon: snap/gui/dnsbench.png
+icon: snap/gui/DNSBench.256px.png
 
 # The license of this application, in SPDX format
 # NOTE: Currently only supports SPDX 2.1 license expressions, as described in Appendix IV of
