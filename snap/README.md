@@ -11,9 +11,7 @@
 [![Status Badge of the `dnsbench` Snap](https://snapcraft.io/dnsbench/badge.svg)](https://snapcraft.io/dnsbench)
 -->
 
-<!-- Uncomment and modify this when you have a screenshot
-![Screenshot of the Snapped Application](local/screenshots/screenshot.png "Screenshot of the Snapped Application")
--->
+![Screenshot of the Snapped Application](local/screenshots/default-view.png "Screenshot of the Snapped Application")
 
 Published for <img src="http://anything.codes/slack-emoji-for-techies/emoji/tux.png" align="top" width="24" /> with 💝 by Snapcrafters
 
