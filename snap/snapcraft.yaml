@@ -106,6 +106,12 @@ confinement: strict
 # snaps can be promoted to `candidate` and `stable` channels
 grade: stable
 
+# Additional metadata
+contact: https://github.com/brlin-tw/dnsbench-snap/issues
+issues: https://github.com/brlin-tw/dnsbench-snap/issues
+source-code: https://github.com/brlin-tw/dnsbench-snap
+website: https://github.com/brlin-tw/dnsbench-snap
+
 # Run `snapcraft help sources` for supported keywords on pulling a part's source ingredients
 # Run `snapcraft plugins` for supported build helper plugins
 # Run `snapcraft help plugins` for supported keywords on building a part
