@@ -1,6 +1,6 @@
 %YAML 1.1
 ---
-# Snapcraft Recipe for [Project]
+# Snapcraft Recipe for GRC's DNS Benchmark
 # ------------------------------
 # This file is in the YAML data serialization format:
 # http://yaml.org
@@ -17,23 +17,35 @@
 # All following comments, including this one, are designed to be stripped
 # before contributing the recipe to the upstream
 
-# [Project], my-awesome-app, my-awesome-app-launch
+# GRC's DNS Benchmark, dnsbench, dnsbench-launch
 # are placeholders text meant to be replaced by appropriate content
-name: my-awesome-app
-title: My Awesome App.
-summary: Single-line elevator pitch for your amazing snap under 79 chars.
+name: dnsbench
+title: GRC's DNS Benchmark
+summary: A utility to determine the exact performance of DNS nameservers
 description: |
-  This is my-awesome-app's description. You have a paragraph or two to tell
-  the most important story about your snap. Keep it under 100 words though,
-  we live in tweetspace and your description wants to look good in the snap
-  store.
+  GRC's DNS Benchmark performs a detailed analysis and comparison of the
+  operational performance and reliability of any set of up to 200 DNS
+  nameservers (sometimes also called resolvers) at once. When the
+  Benchmark is started in its default configuration, it identifies all
+  DNS nameservers the user's system is currently configured to use and
+  adds them to its built-in list of publicly available “alternative”
+  nameservers. Each DNS nameserver in the benchmark list is carefully
+  “characterized” to determine its suitability — to you — for your use
+  as a DNS resolver. This characterization includes testing each
+  nameserver for its “redirection” behavior: whether it returns an error
+  for a bad domain request, or redirects a user's web browser to a
+  commercial marketing-oriented page. While such behavior may be
+  acceptable to some users, others may find this objectionable.
 
-  This is the demonstration app of the Snapcrafters Template Plus:
-  https://github.com/Lin-Buo-Ren/snapcrafters-template-plus
+  NOTE: This is NOT an official distribution of GRC's DNS Benchmark,
+  please refer to the snap's own issue tracker for support:
+
+  Issues · brlin-tw/dnsbench-snap
+  https://github.com/brlin-tw/dnsbench-snap/issues
 
 # The path of icon to represent the snap, relative to the source tree directory
 # Only PNG or SVG image is supported, dimension must be greater than 256x256px
-icon: snap/gui/my-awesome-app.png
+icon: snap/gui/dnsbench.png
 
 # The license of this application, in SPDX format
 # NOTE: Currently only supports SPDX 2.1 license expressions, as described in Appendix IV of
@@ -169,7 +181,7 @@ parts:
 
     plugin: dump
     organize:
-      my-awesome-app: bin/
+      dnsbench: bin/
     stage:
       - bin/*
 
@@ -186,23 +198,23 @@ parts:
 # with `_snap_name_` or `snap run _snap_name_` commands, otherwise it can only be run
 # via `_snap_name_._app_name_` or `snap run _snap_name_._app_name_`
 apps:
-  my-awesome-app:
+  dnsbench:
     # The adapter to set up runtime environment at the launch of the snap
     # NOTE: The `command-chain` property is only supported by the `full` adapter
     adapter: full
 
     # An *relative path* to an executable file root from the `prime` directory to be executed, and its command-line arguments
     # NOTE: The right angle bracket at the beginning of the value of the `command` keyword starts a YAML folded style block scalar, refer the following spec document for more info: http://yaml.org/spec/1.2/spec.html#id2796251
-    command: bin/my-awesome-app
+    command: bin/dnsbench
 
     # The commands that are run, in order, before running the one specified by the `command` key
     command-chain:
       - bin/desktop-launch
-      - bin/my-awesome-app-launch
+      - bin/dnsbench-launch
 
     # If the providing part of the app. has a desktop entry, specify its path relative to the `prime` directory.
     # If the packaging target doesn't provide a desktop entry, ignore the `desktop` key and implement a desktop entry in `/snap/gui`
-    #desktop: share/applications/my-awesome-app.desktop
+    #desktop: share/applications/dnsbench.desktop
 
 # Refer the following documentation for asserting interface plugs and slots in a security confined snap:
 # Interface management - doc - snapcraft.io
@@ -252,11 +264,11 @@ plugs:
   #user-wide-configs:
     #interface: personal-files
     #read:
-      #- $HOME/.config/my-awesome-app
+      #- $HOME/.config/dnsbench
   #system-wide-configs:
     #interface: system-files
     #read:
-      #- /etc/my-awesome-app
+      #- /etc/dnsbench
 
   # Network access
   #network:
