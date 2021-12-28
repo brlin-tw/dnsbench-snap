@@ -84,6 +84,11 @@ assumes:
 # https://docs.snapcraft.io/snapcraft-top-level-metadata/8334#heading--base
 base: core18
 
+# Wine snaps only buildable on these platforms
+architectures:
+  - build-on: amd64
+  - build-on: i386
+
 # Speed up snap decompression
 # How to switch your snap to use LZO compression - snapcraft - snapcraft.io
 # https://forum.snapcraft.io/t/how-to-switch-your-snap-to-use-lzo-compression/21714
